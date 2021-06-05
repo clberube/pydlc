@@ -4,4 +4,4 @@
 # @Last modified time: 2021-06-05 10:06:07
 
 
-from DenseLines import dlines
+from .plot import dlines

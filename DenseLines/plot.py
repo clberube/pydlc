@@ -1,7 +1,8 @@
-# @Author: charles.berube@polymtl.ca
+# @Author: charles
 # @Date:   2021-06-05 09:06:98
-# @Last modified by:   charles.berube@polymtl.ca
-# @Last modified time: 2021-06-05 09:06:15
+# @Email:  charles.berube@polymtl.ca
+# @Last modified by:   charles
+# @Last modified time: 2021-06-05 11:06:20
 
 
 import numpy as np
