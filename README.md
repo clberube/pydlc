@@ -31,8 +31,12 @@ plt.tight_layout()
 plt.show()
 ```
 
-<img src="./figures/example.png" width="50%">
+<p align="center">
+  <img src="./figures/example.png" width="80%">
+</p>
 
 ## Algorithm
-This graphical abstract shows how the algorithm works [(source)](https://idl.cs.washington.edu/papers/dense-lines/).
-<img src="./figures/dense-lines.png" width="50%">
+The following graphical abstract explains the algorithm [(source)](https://idl.cs.washington.edu/papers/dense-lines/).
+<p align="center">
+  <img src="./figures/dense-lines.png" width="80%">
+</p>
