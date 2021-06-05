@@ -7,7 +7,7 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
-from DenseLines import dlines
+from dlines import plot_dlines
 
 # Generate random synthetic time series
 x = np.linspace(0, 100, 50)
