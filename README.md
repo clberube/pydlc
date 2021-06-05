@@ -3,7 +3,7 @@ Python implementation of the Density Line Chart by [Moritz &amp; Fisher (2018)](
 
 ## Installation
 
-Simply install with `pip`
+Simply install PyDenseLines with `pip`.
 
 ```console
 pip install PyDenseLines
@@ -32,3 +32,8 @@ plt.show()
 ```
 
 <img src="./figures/example.png">
+
+## Algorithm
+Here's a graphical abstract showing how the algorithm works.
+<img src="./figures/dense-lines.png">
+[Image source](https://idl.cs.washington.edu/papers/dense-lines/).
