@@ -8,8 +8,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-def dense_lines(ys, x=None, ny=100, ax=None, pad_y=0.01, normalize=True,
-                **kwargs):
+def dlines(ys, x=None, ny=100, ax=None, pad_y=0.01, normalize=True,
+           **kwargs):
 
     if ax is None:
         ax = plt.gca()
