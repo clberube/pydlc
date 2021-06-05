@@ -1,13 +1,20 @@
 # PyDenseLines
-Python implementation of the Density Line Chart by Moritz &amp; Fisher. Useful to visualize a large quantity of time series on a single chart.
+Python implementation of the Density Line Chart by [Moritz &amp; Fisher (2018)](https://arxiv.org/abs/1808.06019). This chart is useful to visualize a large quantity of time series.
 
+## Installation
 
-## Example
+Simply install with `pip`
+
+```console
+pip install PyDenseLines
+```
+
+## Usage
 
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
-from dlines import dlines
+from DenseLines import dlines
 
 # Generate random synthetic time series
 x = np.linspace(0, 100, 50)
