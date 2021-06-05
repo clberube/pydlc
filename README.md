@@ -24,4 +24,4 @@ plt.tight_layout()
 plt.show()
 ```
 
-[!img](figures/example.png)
+[!img](./figures/example.png)
