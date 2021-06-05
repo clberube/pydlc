@@ -18,7 +18,7 @@ for _ in range(1000):
 # Plot here
 fig, axs = plt.subplots(1, 2, figsize=(8, 3), sharey=True, sharex=True)
 axs[0].plot(x, np.array(ys).T, lw=1)
-im = dlines(ys, x, cmap='magma', ax=axs[1])
+im = plot_dlines(ys, x, cmap='magma', ax=axs[1])
 plt.colorbar(im)
 plt.tight_layout()
 plt.savefig('figures/example.png', dpi=144, bbox_inches='tight')

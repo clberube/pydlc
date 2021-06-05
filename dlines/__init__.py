@@ -4,4 +4,4 @@
 # @Last modified time: 2021-06-05 10:06:07
 
 
-from .plot import dlines
+from .plot import plot_dlines
