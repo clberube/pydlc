@@ -36,7 +36,7 @@ plt.show()
 </p>
 
 ## Algorithm
-The following graphical abstract explains the algorithm [(source)](https://idl.cs.washington.edu/papers/dense-lines/).
+The following graphical abstract explains the algorithm ([source](https://idl.cs.washington.edu/papers/dense-lines/)).
 <p align="center">
   <img src="./figures/dense-lines.png" width="80%">
 </p>
