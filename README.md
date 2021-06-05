@@ -6,7 +6,7 @@ Python implementation of the Density Line Chart by [Moritz &amp; Fisher (2018)](
 Simply install PyDenseLines with `pip`.
 
 ```console
-pip install PyDenseLines
+pip install DenseLines
 ```
 
 ## Usage
