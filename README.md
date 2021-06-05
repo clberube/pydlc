@@ -35,6 +35,9 @@ plt.show()
   <img src="./figures/example.png" width="80%">
 </p>
 
+## Limitations
+The vertical grid size can be adjusted with the `ny` parameter. Higher values of `ny` yield a smoother density visualization. However, the horizontal grid size is currently limited to the same size as the input sequences and there is no parameter to adjust it (yet).
+
 ## Algorithm
 The following graphical abstract explains the algorithm ([source](https://idl.cs.washington.edu/papers/dense-lines/)).
 <p align="center">
