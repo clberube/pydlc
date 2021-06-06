@@ -1,5 +1,5 @@
 # PyDLC - Density Line Charts with Python
-Python implementation of the Density Line Chart [(Moritz &amp; Fisher, 2018)](https://arxiv.org/abs/1808.06019) to visualize large collections of time series.
+Python implementation of the Density Line Chart [(Moritz &amp; Fisher, 2018)](https://arxiv.org/abs/1808.06019) to visualize time series collections.
 
 <p align="center">
   <img src="./figures/example.png" width="75%">
