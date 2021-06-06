@@ -1,6 +1,10 @@
 # PyDLC - Density Line Charts with Python
 Python implementation of the Density Line Chart by [Moritz &amp; Fisher (2018)](https://arxiv.org/abs/1808.06019). Useful to visualize **many** time series.
 
+<p align="center">
+  <img src="./figures/example.png" width="80%">
+</p>
+
 ## Installation
 
 ### Python Package Index
@@ -37,10 +41,6 @@ fig.colorbar(im)
 fig.tight_layout()
 plt.show()
 ```
-
-<p align="center">
-  <img src="./figures/example.png" width="80%">
-</p>
 
 ## Limitations
 The vertical grid size can be adjusted with the `ny` parameter. Higher values of `ny` yield a smoother density visualization. However, the horizontal grid size is currently limited to the same size as the input sequences and there is no parameter to adjust it (yet).
