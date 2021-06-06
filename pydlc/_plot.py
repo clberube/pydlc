@@ -57,7 +57,7 @@ def dense_lines(ys, x=None, ax=None, ny=100, y_pad=0.01, normalize=True,
     x_range = np.arange(nx)
     y_pad *= (ys.max() - ys.min())
 
-    y_grid = np.linspace(ys.min() - y_pad, ys.max() + y_pad, ny)
+    y_grid = np.linspace(ys.min()-y_pad, ys.max()+y_pad, ny)
     x_grid = np.linspace(x.min(), x.max(), nx)
 
     grid = np.zeros((ny, nx))
