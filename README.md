@@ -6,7 +6,7 @@ Python implementation of the Density Line Chart by [Moritz &amp; Fisher (2018)](
 ### Python Package Index
 
 ```console
-pip install pydlc
+$ pip install pydlc
 ```
 
 ### Requirements
