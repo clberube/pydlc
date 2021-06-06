@@ -2,7 +2,7 @@
 Python implementation of the Density Line Chart by [Moritz &amp; Fisher (2018)](https://arxiv.org/abs/1808.06019). Useful to visualize **many** time series.
 
 <p align="center">
-  <img src="./figures/example.png" width="80%">
+  <img src="./figures/example.png" width="75%">
 </p>
 
 ## Installation
@@ -48,5 +48,5 @@ The vertical grid size can be adjusted with the `ny` parameter. Higher values of
 ## Algorithm
 This graphical abstract explains the algorithm ([source](https://idl.cs.washington.edu/papers/dense-lines/)).
 <p align="center">
-  <img src="./figures/dense-lines.png" width="80%">
+  <img src="./figures/dense-lines.png" width="75%">
 </p>
