@@ -7,7 +7,7 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
-from dlines import plot_dlines
+from pydlc import dense_lines
 
 # Generate random synthetic time series
 x = np.linspace(0, 100, 50)
@@ -18,8 +18,9 @@ for _ in range(1000):
 # Plot here
 fig, axs = plt.subplots(1, 2, figsize=(8, 3), sharey=True, sharex=True)
 axs[0].plot(x, np.array(ys).T, lw=1)
-im = plot_dlines(ys, x, cmap='magma', ax=axs[1])
-plt.colorbar(im)
-plt.tight_layout()
-plt.savefig('figures/example.png', dpi=144, bbox_inches='tight')
+axs[0].set_title('Line Chart')
+im = dense_lines(ys, x=x, ax=axs[1], cmap='magma')  # accepts plt.imshow() kwargs
+axs[1].set_title('Density Lines Chart')
+fig.colorbar(im)
+fig.tight_layout()
 plt.show()
