@@ -1,16 +1,21 @@
-# PyDLC - Density Line Charts
-Python implementation of the Density Line Chart by [Moritz &amp; Fisher (2018)](https://arxiv.org/abs/1808.06019). This chart is useful to visualize a large quantity of time series.
+# PyDLC - Density Line Charts with Python
+Python implementation of the Density Line Chart by [Moritz &amp; Fisher (2018)](https://arxiv.org/abs/1808.06019). Useful to visualize **many** time series.
 
 ## Installation
 
-Simply install DenseLines with `pip`.
+### Python Package Index
 
 ```console
 pip install pydlc
 ```
 
-## Usage
+### Requirements
+- [numpy](numpy.org/)
+- [matplotlib](matplotlib.org/)
 
+
+## Usage
+The following example shows how to import and use the `dense_lines` plotting function.
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -28,8 +33,8 @@ axs[0].plot(x, np.array(ys).T, lw=1)
 axs[0].set_title('Line Chart')
 im = dense_lines(ys, x=x, ax=axs[1], cmap='magma')  # accepts plt.imshow() kwargs
 axs[1].set_title('Density Lines Chart')
-plt.colorbar(im)
-plt.tight_layout()
+fig.colorbar(im)
+fig.tight_layout()
 plt.show()
 ```
 
@@ -41,7 +46,7 @@ plt.show()
 The vertical grid size can be adjusted with the `ny` parameter. Higher values of `ny` yield a smoother density visualization. However, the horizontal grid size is currently limited to the same size as the input sequences and there is no parameter to adjust it (yet).
 
 ## Algorithm
-The following graphical abstract explains the algorithm ([source](https://idl.cs.washington.edu/papers/dense-lines/)).
+This graphical abstract explains the algorithm ([source](https://idl.cs.washington.edu/papers/dense-lines/)).
 <p align="center">
   <img src="./figures/dense-lines.png" width="80%">
 </p>
