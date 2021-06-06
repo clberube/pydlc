@@ -9,13 +9,13 @@ from distutils.core import setup
 setup(
   name = 'pydlc',         # How you named your package folder (MyLib)
   packages = ['pydlc'],   # Chose the same as "name"
-  version = '0.1',      # Start with a small number and increase it with every change you make
+  version = '0.2',      # Start with a small number and increase it with every change you make
   license='MIT',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
   description = 'Python implementation of the Density Line Chart (Moritz & Fisher, 2018) to visualize large collections of time series.',   # Give a short description about your library
   author = 'Charles L. Bérubé',                   # Type in your name
   author_email = 'charles.berube@polymtl.ca',      # Type in your E-Mail
   url = 'https://github.com/clberube/pydlc',   # Provide either the link to your github or to your website
-  download_url = 'https://github.com/clberube/pydlc/archive/refs/tags/v0.1.tar.gz',    # I explain this later on
+  download_url = 'https://github.com/clberube/pydlc/archive/refs/tags/v0.2.tar.gz',    # I explain this later on
   keywords = ['data visualization', 'density', 'time series'],   # Keywords that define your package best
   install_requires=[            # I get to this in a second
           'numpy',
