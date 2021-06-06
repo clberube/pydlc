@@ -1,4 +1,4 @@
-# PyDenseLines
+# PyDLC - Density Line Charts
 Python implementation of the Density Line Chart by [Moritz &amp; Fisher (2018)](https://arxiv.org/abs/1808.06019). This chart is useful to visualize a large quantity of time series.
 
 ## Installation
@@ -6,7 +6,7 @@ Python implementation of the Density Line Chart by [Moritz &amp; Fisher (2018)](
 Simply install DenseLines with `pip`.
 
 ```console
-pip install DenseLines
+pip install pydlc
 ```
 
 ## Usage
@@ -14,7 +14,7 @@ pip install DenseLines
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
-from dlines import plot_dlines
+from pydlc import dense_lines
 
 # Generate random synthetic time series
 x = np.linspace(0, 100, 50)
@@ -24,8 +24,10 @@ for _ in range(1000):
 
 # Plot here
 fig, axs = plt.subplots(1, 2, figsize=(8, 3), sharey=True, sharex=True)
-axs[0].plot(x, np.array(ys).T, lw=1)  # a normal line chart
-im = plot_dlines(ys, x, cmap='magma', ax=axs[1])  # the DenseLines chart
+axs[0].plot(x, np.array(ys).T, lw=1)
+axs[0].set_title('Line Chart')
+im = dense_lines(ys, x=x, ax=axs[1], cmap='magma')  # accepts plt.imshow() kwargs
+axs[1].set_title('Density Lines Chart')
 plt.colorbar(im)
 plt.tight_layout()
 plt.show()
