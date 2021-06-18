@@ -9,8 +9,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-def dense_lines(ys, x=None, ax=None, ny=100, y_pad=0.01, normalize=True,
-                **kwargs):
+def dense_lines(ys, x=None, ax=None, ny=100, y_lim=None, y_pad=0.01,
+                normalize=True, **kwargs):
     """Returns a Density Line Chart.
 
     Args:
@@ -55,9 +55,13 @@ def dense_lines(ys, x=None, ax=None, ny=100, y_pad=0.01, normalize=True,
 
     nx = x.shape[0]
     x_range = np.arange(nx)
-    y_pad *= (ys.max() - ys.min())
 
-    y_grid = np.linspace(ys.min()-y_pad, ys.max()+y_pad, ny)
+    if y_lim is None:
+        y_pad *= (ys.max() - ys.min())
+        y_grid = np.linspace(ys.min()-y_pad, ys.max()+y_pad, ny)
+    else:
+        y_grid = np.linspace(y_lim[0], y_lim[1], ny)
+
     x_grid = np.linspace(x.min(), x.max(), nx)
 
     grid = np.zeros((ny, nx))
