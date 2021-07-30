@@ -1,3 +1,6 @@
+[![DOI](https://zenodo.org/badge/374140211.svg)](https://zenodo.org/badge/latestdoi/374140211)
+
+
 # PyDLC - Density Line Charts with Python
 Python implementation of the Density Line Chart [(Moritz &amp; Fisher, 2018)](https://arxiv.org/abs/1808.06019) to visualize time series collections.
 
